@@ -1,26 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Fragment } from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import Formulario from './components/Formulario'
+
+function App(){
+    return (
+        <Fragment>
+            <h1>Administrador de pacientes</h1>
+            <div className="container">
+                <div className="one-half column">
+                    1
+                </div>
+                <div className="one-half column">
+                    2
+                </div>
+            </div>
+        </Fragment>
+    )
 }
 
-export default App;
+export default App
