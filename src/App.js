@@ -8,7 +8,7 @@ function App(){
             <h1>Administrador de pacientes</h1>
             <div className="container">
                 <div className="one-half column">
-                    1
+                    <Formulario />
                 </div>
                 <div className="one-half column">
                     2
