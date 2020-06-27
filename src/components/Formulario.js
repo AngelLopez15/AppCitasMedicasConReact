@@ -49,6 +49,14 @@ const Formulario = ({crearCita}) => {
         crearCita(cita)
 
         // reiniciar el form
+        // se reinicia por que en los formularios pusimos la propiedad value
+        actualizarCita({
+            mascota:'',
+            propietario:'',
+            fecha:'',
+            hora:'',
+            sintomas:''
+        })
     }
     // {error} es para pintar la validacion en pantalla
     return ( 
