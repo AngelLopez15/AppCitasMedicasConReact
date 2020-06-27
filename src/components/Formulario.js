@@ -1,4 +1,5 @@
 import React, { Fragment, useState } from 'react';
+import uuid from 'uuid/dist/v4'
 
 const Formulario = () => {
     //Creando el state de Citas
@@ -37,9 +38,13 @@ const Formulario = () => {
         if (mascota.trim()==='' || propietario.trim()==='' || fecha.trim()==='' || hora.trim()==='' || sintomas.trim()==='') {
             actualizarError(true)
             return
-        } 
-        // asignar un id
+        }
+        // Eliminar el mensaje prevop de error
+        actualizarError(false)
         
+        // asignar un id
+        cita.id=uuid()
+        console.log(cita)
         // crear la cita
 
         // reiniciar el form
